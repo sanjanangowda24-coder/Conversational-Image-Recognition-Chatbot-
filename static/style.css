@@ -1,0 +1,137 @@
+/* =============================
+   General Page Styling
+============================= */
+body {
+    background-color: #f8f8f8;+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* =============================
+   Headings
+============================= */
+h1 {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* =============================
+   Buttons
+============================= */
+button {
+    background-color: #4c9dff;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #3a7ec3;
+}
+
+/* =============================
+   Textarea and Inputs
+============================= */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea::placeholder,
+input::placeholder {
+    color: #999;
+}
+
+/* =============================
+   Streamlit Textarea Fix
+============================= */
+.stTextArea div[data-baseweb="textarea"] textarea {
+    background-color: #ffffff !important; 
+    color: #000000 !important;           
+}
+
+/* =============================
+   Image Captions
+============================= */
+.stImage caption {
+    font-style: italic;
+    color: #666;
+}
+
+/* =============================
+   Login / Signup Page Layout
+============================= */
+.auth-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.auth-container input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.auth-container button {
+    background-color: #4c9dff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-container button:hover {
+    background-color: #3a7ec3;
+}
+
+/* =============================
+   Links (Login/Signup switch)
+============================= */
+.auth-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth-link a {
+    color: #4c9dff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
